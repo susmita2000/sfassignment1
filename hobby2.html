@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8"/>
@@ -63,17 +64,30 @@
 		 	background-color: #d580ff;
 		 	
 		 	font-family: 'Griffy';
-		 		 background: linear-gradient(90deg, #f90 0%, #660033 0) 50%/ 1em;
-  animation: blinds 2s ease-in-out infinite alternate;
+		 		 
+			  animation-name: floating,bg;
+    animation-duration: 3s,6s;
+    animation-iteration-count: infinite,infinite;
+
+    animation-timing-function: ease-in-out,ease-in-out;
+   -moz- animation-timing-function: ease-in-out,ease-in-out;
+    -webkit-animation-timing-function: ease-in-out,ease-in-out;
+    
+    margin-top: 5px;
 	
 	}
 
-@keyframes blinds {
-  to {
-    background-image: linear-gradient(90deg, #ff99cc 100%, #660033 0);
-  }
-}
 
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+@keyframes bg{
+	0%{ background-color:#33ccff;}
+	50%{ background-color:#a6ff4d;}
+	100%{ background-color:#33ccff;}
+}
 
 		 div .contain2{
 		 	height: 250px;
@@ -118,11 +132,18 @@
 		top:45%;
 		font-size:50px;
 		 	
-		 	background-color: rgba(0,0,0,0.2);
+		 	 background-color: red;
 		 	
 		 	font-family: 'Griffy';
-		 		 		 background: linear-gradient(90deg, #33cc33 0%, #660033 0) 50%/ 1em;
-  animation: blinds 2s ease-in-out infinite alternate;
+		  animation-name: floating,bg;
+    animation-duration: 3s,6s;
+    animation-iteration-count: infinite,infinite;
+
+    animation-timing-function: ease-in-out,ease-in-out;
+   -moz- animation-timing-function: ease-in-out,ease-in-out;
+    -webkit-animation-timing-function: ease-in-out,ease-in-out;
+    
+    margin-top: 5px;
 
 		 	
 		 }
@@ -172,9 +193,16 @@
 		 	background-color: rgba(0,0,0,0.2);
 		 	
 		 	font-family: 'Griffy';
-		 		 		 background: linear-gradient(90deg, #4d94ff 0%, #660033 0) 50%/ 1em;
-  animation: blinds 2s ease-in-out infinite alternate;
+	
+	 	  animation-name: floating,bg;
+    animation-duration: 3s,6s;
+    animation-iteration-count: infinite,infinite;
 
+    animation-timing-function: ease-in-out,ease-in-out;
+   -moz- animation-timing-function: ease-in-out,ease-in-out;
+    -webkit-animation-timing-function: ease-in-out,ease-in-out;
+    
+    margin-top: 5px;
 		 	
 		 }
 		ul.nav {
@@ -186,12 +214,14 @@
    background-color: #ffff99;
    overflow: hidden;
   font-family: 'Julee';
+
   
 
    
 }
 li.nav1 {
   float: left;
+
 
 }
 
@@ -202,16 +232,20 @@ li.nav1 a {
   padding: 2px 16px;
   text-decoration: none;
 
+
 }
 
 li.nav1 a:hover:not(.active) {
   background-color: #ff99cc;
   color: white;
+   
+
 }
 
 li.nav1 .active {
 	color:white;
   background-color: #cc0066;
+ 
 }
 	
 
