@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<link href='https://fonts.googleapis.com/css?family=Lemon' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Julee' rel='stylesheet'>
+<head >
+<title>
+	about
+</title>
+
+<div class="hea" font-family:'Lemon'><marquee scrollamount="5">About me...</marquee></div>
+	
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+
+<link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+
+</head>
+<style type="text/css">
+	div.info{
+		font-size: 40px;
+		
+		border-radius: 50px;
+		width:650px;
+		height:350px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 30px;
+		position:absolute;
+		left:50%;
+		transform: translateX(-50%);
+		top:30%;
+		
+	}
+	div.hea{
+		position: absolute;
+		top:12%;
+		left: 50%;
+		width: 50%;
+				transform: translateX(-50%);
+
+		font-size: 100px;
+		color: #660080;
+		
+		
+		font-family:'Cabin Sketch';
+	}
+	li.code{
+		padding-bottom: 10px;
+	}
+	
+	li.ip{
+		padding-bottom: 10px;
+	}
+	li.chem{
+		padding-bottom: 10px;
+	}
+	h1{
+		font-size: 90px;
+		
+	
+	}
+	body{
+		
+			background-image: url('pat5.jpg');
+		background-size:  cover contain;
+	
+     background-position:  50% -5%;
+		background-repeat: no-repeat;
+		background-color: black;
+	}
+	div.info{
+		color:#ff0066;
+		font-family: 'Courgette';
+	}
+		
+	@keyframes eg1{
+		33% { color:#0066ff; }
+		66% {color:#00e600;}
+		100%{color:#ff9900;}
+		
+	}
+	@keyframes eg2{
+		33% { color:#ff9900; }
+		66% {color:#0066ff;}
+		100%{color:#00e600;}
+		
+	}
+	@keyframes eg3{
+		33% { color:#00e600; }
+		66% {color:#ff9900;}
+		100%{color:#0066ff;}
+		
+	}
+	li.code{
+		
+		animation-name: eg1;
+		animation-duration: 10s;
+		animation-iteration-count: 70;
+	}
+	span.nm{
+		color:#660080;
+	}
+	span.nm:hover{
+		color: #ff3300;
+	}
+	li.ip{
+		
+		animation-name: eg2;
+		animation-duration: 10s;
+		animation-iteration-count: 70;
+	}
+	li.chem{
+		
+		animation-name: eg3;
+		animation-duration: 10s;
+		animation-iteration-count: 70;
+	}
+	li.chem:hover{
+		-webkit-transform:scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	li.code:hover{
+		-webkit-transform:scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+
+	li.ip:hover{
+		-webkit-transform:scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+		ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  color:black;
+   background-color: #ffff99;
+   overflow: hidden;
+  font-family: 'Julee';
+  
+
+   
+}
+li.nav1 {
+  float: left;
+
+}
+
+li.nav1 a {
+  display: block;
+  color: #cc0066;
+  text-align: center;
+  padding: 2px 16px;
+  text-decoration: none;
+
+}
+
+li.nav1 a:hover:not(.active) {
+  background-color: #ff99cc;
+  color: white;
+}
+
+li.nav1 .active {
+	color:white;
+  background-color: #cc0066;
+}
+
+	</style>
+	<body>
+	<ul class="nav">
+		<li class="nav1"><a  href="index.html">Home</a></li>
+		<li class="nav1"><a class="active" href="about.html">About</a></li>
+		<li class="nav1"><a href="achieve.html">Achievements</a></li>
+		<li class="nav1"><a href="hobby2.html">Hobbies</a></li>
+		<li class="nav1"><a href="contact.html">Contact</a></li>
+	</ul>
+	
+       
+		<div class="info">
+			Hi! I am <span class="nm">Susmita</span>. I am a first year undergraduate student of E&ECE, IIT Kharagpur. My areas of interest include: 
+			<ul class="inte">
+				<li class="code">Coding<span> <img src="data.png" alt ="code" height="35" width="35"></span></li>
+				<li class="ip">Image processing<span> <img src="ip.png" alt ="ip" height="35" width="35"></span> </li>
+				<li class="chem"> Chemistry  <span> <img src="chemistry.png" alt ="chem" height="35" width="35"></span></li>
+			</ul>
+		</div>
+		
+
+	</body>
+	</html>
